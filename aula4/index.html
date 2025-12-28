@@ -3,27 +3,26 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title> Eventos DOM</title>
-    <style></style>
+    <title>JS</title>
+    <style>
+        body{
+            background-color:azure;
+            color:rgb(0, 0, 0);
+            font-family: 'Courier New', Courier, monospace;
+        }
+    </style>
 </head>
 <body>
-    <h1>Somando valores</h1>
-    <input type="number" id="txtn1">
-+
-    <input type="number" id="txtn2">
-    <input type="button" value="somar" onclick="somar()">
-    <div id="res">resultado</div>
-    <script>
-        function somar() {
-            const tn1=document.getElementById('txtn1')
-             const tn2=document.getElementById('txtn2')
-            const res = window.getElementById('res')
-            const n1 = Number(tn1.value) || 0;
-            const n2 = Number(tn2.value) || 0;
-            const s = n1 + n2
-            res.innerHTML=  'resultado: ' + s;
-        }
-    </script>
- 
+    <h1>Iniciando Estudos em DOM</h1>
+    <p>Aqui vai o resultado</p>
+    <p>Aprendendo a usar o <strong>DOM</strong> em javacript</p>
+    <div id="mensagem">Clique em min</div>
+<script>
+    var p1 =document.getElementsByTagName('p')[0]
+    Document.write(p1.innerText)
+    var d =window.document.getElementById('mensagem')
+    d.style.backgroun = 'green'
+</script>
+    
 </body>
 </html>
